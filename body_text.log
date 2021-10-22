@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  22 OCT 2021 13:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  22 OCT 2021 14:41
 entering extended mode
 **./body_text.tex
 (body_text.tex
@@ -430,25 +430,32 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\Users\adunc\AppData\Local\Programs\MiKTeX 2.9\tex\latex\placeins\placeins.
+sty"
+Package: placeins 2005/04/18  v 2.2
 ) (body_text.aux
+
+LaTeX Warning: Label `key' multiply defined.
+
 
 LaTeX Warning: Label `key' multiply defined.
 
 )
 \openout1 = `body_text.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 ("C:\Users\adunc\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
@@ -528,60 +535,66 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 18.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 19.
 
 ("C:\Users\adunc\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
 
-Overfull \hbox (4.23793pt too wide) in paragraph at lines 22--23
+Overfull \hbox (4.23793pt too wide) in paragraph at lines 23--24
 []\OT1/cmr/m/n/10.95 Material prop-er-ties con-stant (taken at av-er-age tem-pe
 r-a-ture $\OML/cmm/m/it/10.95 T \OT1/cmr/m/n/10.95 = 469[]\OML/cmm/m/it/10.95 C
 $\OT1/cmr/m/n/10.95 ) 
  []
 
-<images/part_a_fig.jpg, id=1, 560.0925pt x 251.94125pt>
-File: images/part_a_fig.jpg Graphic file (type jpg)
-<use images/part_a_fig.jpg>
-Package pdftex.def Info: images/part_a_fig.jpg  used on input line 27.
-(pdftex.def)             Requested size: 306.0022pt x 137.65317pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [1
 
-{C:/Users/adunc/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/pa
-rt_a_fig.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 37--39
+{C:/Users/adunc/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<images/part_a_fig.jpg, id=14, 560.0925pt x 251.94125pt>
+File: images/part_a_fig.jpg Graphic file (type jpg)
+<use images/part_a_fig.jpg>
+Package pdftex.def Info: images/part_a_fig.jpg  used on input line 57.
+(pdftex.def)             Requested size: 306.0022pt x 137.65317pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
 
  []
 
-[2] (body_text.aux)
+[2 <./images/part_a_fig.jpg>] [3] (body_text.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2382 strings out of 493303
- 32045 string characters out of 3129784
- 91324 words of memory out of 3000000
- 5907 multiletter control sequences out of 15000+200000
- 9760 words of font info for 35 fonts, out of 3000000 for 9000
+ 2420 strings out of 493303
+ 32645 string characters out of 3129784
+ 93442 words of memory out of 3000000
+ 5932 multiletter control sequences out of 15000+200000
+ 12530 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,25p,456b,229s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,9n,25p,456b,229s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb><C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmbxti10.pfb><C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/adunc/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/adunc/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ad
-unc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-<C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr17.pfb><C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr8.pfb><C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on body_text.pdf (2 pages, 175412 bytes).
+/cm/cmbx10.pfb><C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmbx12.pfb><C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/adunc/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/adunc/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/a
+dunc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+><C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmmib10.pfb><C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/adunc/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/adunc/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/adunc/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on body_text.pdf (3 pages, 205420 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
+ 61 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
