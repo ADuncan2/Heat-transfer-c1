@@ -68,7 +68,7 @@ Energy balance for closed system gives the following equation.
 	\stackrel{.}{Q} = hA(T_{s}-T_{f}) = C_{p}\rho V \frac{dT_{c}}{dt}
 \end{equation}
 
-Where $\stackrel{.}{Q}$ is energy flow [$W$], $h$ is the heat transfer coefficient [$W/m^{2}K$], $A$ is the surface area between the ball and water [$m^{2}$], $T_{s}$ is the temperature of the steel ball [$^{o}C$], $T_{f}$ is the temperature of the water [$^{o}C$], $C_{p}$ is the specific heat capacity [$J/mK$], $\rho$ is the density of the steel ball[$kg/m^{3}$], $V$ is the volume of the steel ball [$m^3$] and $t$ is the time [$s$].
+Where $\stackrel{.}{Q}$ is heat [$W$], $h$ is the heat transfer coefficient [$W/m^{2}K$], $A$ is the surface area between the ball and water [$m^{2}$], $T_{s}$ is the temperature of the steel ball [$^{o}C$], $T_{f}$ is the temperature of the water [$^{o}C$], $C_{p}$ is the specific heat capacity [$J/mK$], $\rho$ is the density of the steel ball[$kg/m^{3}$], $V$ is the volume of the steel ball [$m^3$] and $t$ is the time [$s$].
 \newline
 
 Rearranging (\ref{eqn_1}) to separate the variables gives.
@@ -96,11 +96,21 @@ Substituting in the values for the variables given in Figure \ref{fig:schem_a} g
 Where $t_2$ is the time for the steel ball to reach a temperature of $200^{o}C$ under given assumptions.
 
 \section{\emph{Part B: Lumped capacitance justification}}
-The lumped capacitance method is only valid if the ratio of the conductive heat transfer to convective heat transfer is low. This ratio is known as the Biot number $Bi$ and is given by.
-\begin{equation}\label{key}
+The lumped capacitance method is only valid if the ratio of the conductive heat transfer to convective heat transfer is low. This ratio is known as the Biot number, $Bi$, and is given by.
+\begin{equation}\label{eqn_biot}
 	Bi = \frac{h \cdot L_{c}}{k}
 \end{equation}
-Where $h$ is convective coefficient [W/mK], $L_{c}$ is the characteristic length [m] and $k$ is the conductivity [$W/m^2K$]
+Where $h$ is convective coefficient [$W/m^{2}K$], $L_{c}$ is the characteristic length [m] and $k$ is the conductivity [$W/m \cdot K$]. 
+
+Applying the values from Tables \ref{tab1} and \ref{tab2}, choosing to set $L_{c}=R$ and substituting into equation \ref{eqn_biot} gives:
+\begin{equation}\label{key}
+	Bi = 0.7
+\end{equation}
+
+If $Bi > 0.1$ then the lumped capacitance method is no longer applicable as the assumptions made introduce non-trivial errors \cite{bergman_fundamentals_2011}. This means that the result in part A likely inaccurate.
+
+It is worth noting however that the choice of $L_c$ is significant. it is common to select $L_c$ to be the maximum distance over which a temperature gradient would occur, as has been done above, but the method from the mathematical derivation is to use $L_c = \frac{V}{A_s}$ which for a sphere gives $L_c = \frac{R}{3}$. This means the use of $L_c = R$ will tend to overestimate the value of $Bi$. In this case however, using $L_c = \frac{R}{3}$ gives $Bi = 0.25$ so the result can still be assumed to be inaccurate despite the overestimate.
+
 \section{\emph{Part C: Transient conduction}}
 \begin{equation}
 	t=\frac{f_{0} \rho C_{p} R^{2}}{k}
