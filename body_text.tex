@@ -43,13 +43,15 @@
 	\caption{Properties from literature}
 	\begin{tabular}{llll}
 		Property & Value at $T_{avg}$(469 $^{o}C$) & Unit & Source \\ \hline
-		Specific heat   capacity, Cp & 552 & J/kgK &  \\
-		Density & 7.8 x $10^3$ & $kg/m^3$ &  \\
-		Conductivity & 40 & W/mK & 
+		Specific heat   capacity, Cp & 552 & $J\cdot kg^{-1} K^{-1}$ & \cite{jean-marc_franssen_fire_2015} \\
+		Density & 7.8 x $10^3$ & $kg\cdot m^{-3}$ & \cite{bergman_fundamentals_2011} \\
+		Conductivity & 40 & $W\cdot m^{-1} K^{-1} $& \cite{jean-marc_franssen_fire_2015}
 	\end{tabular}
 	\label{tab2}
 \end{table}
 \FloatBarrier
+
+The density of steel is assumed to be constant over the temperature range so the value in table \ref{tab2}, which is given at 300K, is assumed to be accurate. To confirm this assumption is acceptable the elongation was calculated using the ISO 834 standard equations\cite{jean-marc_franssen_fire_2015}. This showed the overall change in volume of the sphere was ~3\% over the full temperature range of the problem. As $V \propto \rho$ this change is low enough to be discounted and for the assumption to be justified.
 
 \subsection{Schematic}
 \begin{figure}[!htbp]
@@ -94,16 +96,20 @@ Substituting in the values for the variables given in Figure \ref{fig:schem_a} g
 Where $t_2$ is the time for the steel ball to reach a temperature of $200^{o}C$ under given assumptions.
 
 \section{\emph{Part B: Lumped capacitance justification}}
-\begin{equation}
-	Bi = \frac{h L_{c}}{k}
+The lumped capacitance method is only valid if the ratio of the conductive heat transfer to convective heat transfer is low. This ratio is known as the Biot number $Bi$ and is given by.
+\begin{equation}\label{key}
+	Bi = \frac{h \cdot L_{c}}{k}
 \end{equation}
-Where $h$ is conductivity [W/mK]
+Where $h$ is convective coefficient [W/mK], $L_{c}$ is the characteristic length [m] and $k$ is the conductivity [$W/m^2K$]
+\section{\emph{Part C: Transient conduction}}
 \begin{equation}
 	t=\frac{f_{0} \rho C_{p} R^{2}}{k}
 \end{equation}
-\section{\emph{Part C: Transient conduction}}
-
 \section{\emph{Part D: Non-infinite water bath}}
 
 \section{\emph{Part E: Equilibrium temperature}}
+
+\bibliographystyle{plain}
+\bibliography{refs}
 \end{document}
+
