@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  22 OCT 2021 16:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  25 OCT 2021 12:16
 entering extended mode
 **./body_text.tex
 (body_text.tex
@@ -563,26 +563,30 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [1
 
 {C:/Users/adunc/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Overfull \hbox (79.41013pt too wide) in paragraph at lines 59--66
+ [][] 
+ []
+
 <images/part_a_fig.jpg, id=14, 567.62062pt x 234.37563pt>
 File: images/part_a_fig.jpg Graphic file (type jpg)
 <use images/part_a_fig.jpg>
-Package pdftex.def Info: images/part_a_fig.jpg  used on input line 59.
+Package pdftex.def Info: images/part_a_fig.jpg  used on input line 73.
 (pdftex.def)             Requested size: 306.0022pt x 126.35352pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--73
+[2 <./images/part_a_fig.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
 
  []
 
-[2 <./images/part_a_fig.jpg>] [3] (body_text.bbl) [4] (body_text.aux)
+[3] (body_text.bbl) [4] (body_text.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2428 strings out of 493303
- 32884 string characters out of 3129784
- 93456 words of memory out of 3000000
- 5936 multiletter control sequences out of 15000+200000
+ 2429 strings out of 493303
+ 32890 string characters out of 3129784
+ 93464 words of memory out of 3000000
+ 5937 multiletter control sequences out of 15000+200000
  12876 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,9n,25p,566b,227s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -604,7 +608,7 @@ sers/adunc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
 y10.pfb><C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmsy8.pfb><C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmti10.pfb>
-Output written on body_text.pdf (4 pages, 240193 bytes).
+Output written on body_text.pdf (4 pages, 241451 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -53,6 +53,20 @@
 
 The density of steel is assumed to be constant over the temperature range so the value in table \ref{tab2}, which is given at 300K, is assumed to be accurate. To confirm this assumption is acceptable the elongation was calculated using the ISO 834 standard equations\cite{jean-marc_franssen_fire_2015}. This showed the overall change in volume of the sphere was ~3\% over the full temperature range of the problem. As $V \propto \rho$ this change is low enough to be discounted and for the assumption to be justified.
 
+\begin{table}[h]
+	\centering
+	\caption{Properties error analysis}
+	\begin{tabular}{lllll}
+		T [$^{o}C]$ & $C_{p}$ [$J \cdot kg^{-1}K^{-1}$] & \% change from $T_{469}$ & k [$W \cdot m^{-1}K^{-1}$] & \% change from $T_{469}$ \\ \hline
+		900 & 650 & 56 & 27.3 & -29 \\
+		469 & 416 & 0 & 38.4 & 0 \\
+		38 & 454 & 9 & 52.7 & 37
+	\end{tabular}
+	\label{tab3}
+\end{table}
+
+Similarly the variation in specific heat capacity ($C_p$) and conductivity ($k$) were considered over the full temperature range as shown in Table \ref{tab3}. The variation in $k$ varies from the mean T value by roughly 30\% either way.
+
 \subsection{Schematic}
 \begin{figure}[!htbp]
 	\centering
@@ -109,7 +123,7 @@ Applying the values from Tables \ref{tab1} and \ref{tab2}, choosing to set $L_{c
 
 If $Bi > 0.1$ then the lumped capacitance method is no longer applicable as the assumptions made introduce non-trivial errors \cite{bergman_fundamentals_2011}. This means that the result in part A likely inaccurate.
 
-It is worth noting however that the choice of $L_c$ is significant. it is common to select $L_c$ to be the maximum distance over which a temperature gradient would occur, as has been done above, but the method from the mathematical derivation is to use $L_c = \frac{V}{A_s}$ which for a sphere gives $L_c = \frac{R}{3}$. This means the use of $L_c = R$ will tend to overestimate the value of $Bi$. In this case however, using $L_c = \frac{R}{3}$ gives $Bi = 0.25$ so the result can still be assumed to be inaccurate despite the overestimate.
+It is worth noting that the choice of $L_c$ is significant. it is common to select $L_c$ to be the maximum distance over which a temperature gradient would occur, as has been done above, but the method from the mathematical derivation is to use $L_c = \frac{V}{A_s}$ which for a sphere gives $L_c = \frac{R}{3}$. This means the use of $L_c = R$ will tend to overestimate the value of $Bi$. In this case however, using $L_c = \frac{R}{3}$ gives $Bi = 0.25$ so the result can still be assumed to be inaccurate despite the overestimate.
 
 \section{\emph{Part C: Transient conduction}}
 \begin{equation}
