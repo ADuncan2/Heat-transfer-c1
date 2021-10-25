@@ -57,7 +57,7 @@ The density of steel is assumed to be constant over the temperature range so the
 	\centering
 	\caption{Properties error analysis}
 	\begin{tabular}{lllll}
-		T [$^{o}C]$ & $C_{p}$ [$J \cdot kg^{-1}K^{-1}$] & \% change from $T_{469}$ & k [$W \cdot m^{-1}K^{-1}$] & \% change from $T_{469}$ \\ \hline
+		T [$^{o}C]$ & $C_{p}$ [$J \cdot kg^{-1}K^{-1}$] & $\Delta$\% from $T_{469}$ & k [$W \cdot m^{-1}K^{-1}$] & $\Delta$\% from $T_{469}$ \\ \hline
 		900 & 650 & 56 & 27.3 & -29 \\
 		469 & 416 & 0 & 38.4 & 0 \\
 		38 & 454 & 9 & 52.7 & 37
@@ -65,8 +65,10 @@ The density of steel is assumed to be constant over the temperature range so the
 	\label{tab3}
 \end{table}
 
-Similarly the variation in specific heat capacity ($C_p$) and conductivity ($k$) were considered over the full temperature range as shown in Table \ref{tab3}. The variation in $k$ varies from the mean T value by roughly 30\% either way.
+Similarly the variation in specific heat capacity ($C_p$) and conductivity ($k$) were considered over the full temperature range as shown in Table \ref{tab3}. The value of $k$ varies from the $T_{mean}$ value by roughly 30\% either way but the $T_{mean}$ value is only $~4\%$ different from the mean of the two temperature extremes. This fact coupled with the information given in ISO 835 standard \cite{jean-marc_franssen_fire_2015} suggest a linear change in $h$, which makes the approximation useful. 
 
+The variation in $C_p$ is less clear cut, with the value at $T_{mean}$ falling much closer to the value at $T_{38}$ than the value at $T_{900}$ as showing in table \ref{tab3}. This variation is due to the non-linear variation of $C_p$ with temperature \cite{jean-marc_franssen_fire_2015}. Further investigation would be needed get an accurate estimate of the level of error this approximation introduces to the result but this falls beyond the scope of this problem set so the approximation is used as a best estimate.
+\pagebreak
 \subsection{Schematic}
 \begin{figure}[!htbp]
 	\centering
@@ -103,7 +105,7 @@ Rearranging (\ref{eqn_3}) to make $t_{2}$ the subject gives.
 
 Substituting in the values for the variables given in Figure \ref{fig:schem_a} gives the final value.
 \boldmath
-\begin{equation}\label{key}
+\begin{equation}\label{t1}
 	t_2 = 205 s
 \end{equation}
 \unboldmath
@@ -117,18 +119,40 @@ The lumped capacitance method is only valid if the ratio of the conductive heat 
 Where $h$ is convective coefficient [$W/m^{2}K$], $L_{c}$ is the characteristic length [m] and $k$ is the conductivity [$W/m \cdot K$]. 
 
 Applying the values from Tables \ref{tab1} and \ref{tab2}, choosing to set $L_{c}=R$ and substituting into equation \ref{eqn_biot} gives:
-\begin{equation}\label{key}
+\begin{equation}\label{biot_num}
 	Bi = 0.7
 \end{equation}
 
 If $Bi > 0.1$ then the lumped capacitance method is no longer applicable as the assumptions made introduce non-trivial errors \cite{bergman_fundamentals_2011}. This means that the result in part A likely inaccurate.
 
-It is worth noting that the choice of $L_c$ is significant. it is common to select $L_c$ to be the maximum distance over which a temperature gradient would occur, as has been done above, but the method from the mathematical derivation is to use $L_c = \frac{V}{A_s}$ which for a sphere gives $L_c = \frac{R}{3}$. This means the use of $L_c = R$ will tend to overestimate the value of $Bi$. In this case however, using $L_c = \frac{R}{3}$ gives $Bi = 0.25$ so the result can still be assumed to be inaccurate despite the overestimate.
+It is worth noting that the choice of $L_c$ is significant. it is common to select $L_c$ to be the maximum distance over which a temperature gradient would occur, as has been done above, but the method from the mathematical derivation is to use $L_c = \frac{V}{A_s}$ which for a sphere gives $L_c = \frac{R}{3}$. This means the use of $L_c = R$ will tend to overestimate the value of $Bi$. In this case however, using $L_c = \frac{R}{3}$ gives $Bi = 0.25$ so the result can still be assumed to be inaccurate using the lumped capacitance method despite the overestimate.
 
 \section{\emph{Part C: Transient conduction}}
-\begin{equation}
-	t=\frac{f_{0} \rho C_{p} R^{2}}{k}
+\subsection{Time interval to cool centre of sphere to $200 ^{o}C$}
+As the initial and final temperature of the sphere are specified and as well as the temperature of the fluid which is assumed to be constant the ratio below can be calculated.
+\begin{equation}\label{ratio_1}
+	\frac{T_{(0,t)} -T_{f}}{T_{i} - T_{f}}
 \end{equation}
+Using the values in table \ref{tab1} the answer to (\ref{ratio_1}) is $0.19$. Taking the inverse of (\ref{biot_num}) gives $1.7$. These two values allows the Fourier number to be determined from the Heisler chart \cite{multidimensional-transient}, which is determined to be.
+\begin{equation}\label{Fr_1}
+	Fr = 1.2
+\end{equation}
+The Fourier number is defined below.
+\begin{equation}\label{Fr_2}
+	Fr = \frac{tk}{\rho C_{p} R^{2}}
+\end{equation}
+
+Using the result from (\ref{Fr_1}) and the values in tables \ref{tab1} and \ref{tab2} into (\ref{Fr_2}) gives the final result time taken.
+\boldmath
+\begin{equation}\label{t2}
+	t = \frac{F_{o}\rho C_{p} R^{2}}{k} = 257 s
+\end{equation}
+\unboldmath
+
+Comparing the results of (\ref{t1}) and (\ref{t2}) the result gained from the lumped capacitance method is of a similar maginitude but lower than the transient solution. This matches with expectations as the temperature gradient that was found to be important for this case in section 2 would take additional time to reach the centre point.
+
+\subsection{title}
+
 \section{\emph{Part D: Non-infinite water bath}}
 
 \section{\emph{Part E: Equilibrium temperature}}
