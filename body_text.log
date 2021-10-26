@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  26 OCT 2021 09:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  26 OCT 2021 10:24
 entering extended mode
 **./body_text.tex
 (body_text.tex
@@ -540,13 +540,6 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
 
-Overfull \hbox (4.23793pt too wide) in paragraph at lines 23--24
-[]\OT1/cmr/m/n/10.95 Material prop-er-ties con-stant (taken at av-er-age tem-pe
-r-a-ture $\OML/cmm/m/it/10.95 T \OT1/cmr/m/n/10.95 = 469[]\OML/cmm/m/it/10.95 C
-$\OT1/cmr/m/n/10.95 ) 
- []
-
-
 Overfull \hbox (11.12758pt too wide) in paragraph at lines 44--51
  [][] 
  []
@@ -572,7 +565,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--89
 
  []
 
-[3 <./images/part_a_fig.jpg>] [4] (body_text.bbl) [5] (body_text.aux)
+[3 <./images/part_a_fig.jpg>] [4] (body_text.bbl [5]) [6] (body_text.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -584,7 +577,7 @@ Here is how much of TeX's memory you used:
  5944 multiletter control sequences out of 15000+200000
  12876 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,25p,588b,227s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,9n,25p,648b,227s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb><C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9/f
@@ -605,9 +598,9 @@ blic/amsfonts/cm/cmr8.pfb><C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/adunc/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/adunc/AppData/Loca
 l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on body_text.pdf (5 pages, 264328 bytes).
+Output written on body_text.pdf (6 pages, 265310 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
+ 90 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
