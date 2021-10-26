@@ -4,6 +4,7 @@
 \graphicspath{ {images/} }
 \usepackage{amsmath}
 \usepackage{placeins}
+\usepackage{multirow}
 
 \title{Coursework 1 – Transient Conduction}
 \author{Adam Duncan}
@@ -106,7 +107,7 @@ Rearranging (\ref{eqn_3}) to make $t_{2}$ the subject gives.
 Substituting in the values for the variables given in Tables \ref{tab1} and \ref{tab2} gives the final value.
 \boldmath
 \begin{equation}\label{t1}
-	t_2 = 205 s
+	t_2 = 200 s
 \end{equation}
 \unboldmath
 Where $t_2$ is the time for the steel ball to reach a temperature of $200^{o}C$ under given assumptions.
@@ -128,33 +129,103 @@ If $Bi > 0.1$ then the lumped capacitance method is no longer applicable as the 
 It is worth noting that the choice of $L_c$ is significant. It is common to select $L_c$ to be the maximum distance over which a temperature gradient would occur, as has been done above, but the method from the mathematical derivation uses $L_c = \frac{V}{A_s}$ which for a sphere gives $L_c = \frac{R}{3}$. This means the use of $L_c = R$ will tend to overestimate the value of $Bi$. In this case however, using $L_c = \frac{R}{3}$ gives $Bi = 0.25$ so the result can still be assumed to be inaccurate using the lumped capacitance method despite the overestimate.
 
 \section{\emph{Part C: Transient conduction}}
+\subsection{Assumptions}
+\begin{itemize}
+	\item No change in water temperature.
+	\item No heat transfer by radiation.
+	\item Material is standard carbon steel.
+	\item Material properties are constant (taken at average temperature $T = 469 ^{o}C$).
+\end{itemize}
 \subsection{Time interval to cool centre of sphere to $200 ^{o}C$}
 As the initial and final temperature of the sphere are specified as well as the temperature of the fluid which is assumed to be constant, the ratio below can be calculated.
 \begin{equation}\label{ratio_1}
 	\frac{T_{(0,t)} -T_{f}}{T_{i} - T_{f}}
 \end{equation}
-Using the values in Table \ref{tab1} the answer to (\ref{ratio_1}) is $0.19$. Taking the inverse of (\ref{biot_num}) gives $1.7$. These two values allow the Fourier number to be determined from the Heisler chart \cite{multidimensional-transient}, which is determined to be.
+Using the values in Table \ref{tab1} the answer to (\ref{ratio_1}) is $0.19$. Taking the inverse of (\ref{biot_num}) gives $1.33$. These two values allow the Fourier number to be determined from the Heisler chart \cite{multidimensional-transient}, which is determined to be.
 \begin{equation}\label{Fr_1}
-	Fr = 1.2
+	Fo = 0.67
 \end{equation}
 The Fourier number is defined below.
 \begin{equation}\label{Fr_2}
-	Fr = \frac{tk}{\rho C_{p} R^{2}}
+	Fo = \frac{tk}{\rho C_{p} R^{2}}
 \end{equation}
 
 Using the result from (\ref{Fr_1}) and substituting in the values from Tables \ref{tab1} and \ref{tab2} into (\ref{Fr_2}) gives the final result time taken.
 \boldmath
 \begin{equation}\label{t2}
-	t = \frac{F_{o}\rho C_{p} R^{2}}{k} = 257 s
+	t = \frac{F_{o}\rho C_{p} R^{2}}{k} = 182 s
 \end{equation}
 \unboldmath
 
-Comparing this result and (\ref{t1}), the result gained from the lumped capacitance method, it can be seen the two are of a similar magnitude but (\ref{t2}) is larger than (\ref{t1}). This matches with expectations as the assumptions used in section 1 were found to be near the boundary so the error introduced by applying them would be significant but still give an answer of the same magnitude. Also the temperature gradient that was found to be important for this case in section 2 would take additional time to reach the centre point so the transient response being larger than the lumped capacitance result is intuitive.
+Comparing this result and (\ref{t1}), the result gained from the lumped capacitance method, it can be seen the two are of a similar magnitude but (\ref{t2}) is lower than (\ref{t1}). This matches with expectations as the assumptions used in section 1 were found to be near the boundary so the error introduced by applying them would be significant but still give an answer of the same magnitude. Where it differs from expectation is that the temperature gradient that was found to be important for this case in section 2 should take additional time to reach the centre point so the transient response would be expected to take longer to reach the target temperature than the lumped capacitance method. The fact that this is not the case here may be attributed to errors introduced by the approximations mentioned in section 1 and errors from reading from Heisler charts.
 
-\subsection{title}
+\subsection{Time interval to cool surface of sphere to $200 ^{o}C$}
+To find the centre temperature of the sphere when the surface reaches $200 ^{o}C$ a quantification of the temperature gradient is needed. The Heisler charts can again be used to find this using $\frac{1}{Bi}=1.33$ and that $\frac{r}{r_{0}}= 1$ for this example, giving the following.
+\begin{equation}\label{surf_2_cent}
+	\frac{T - T_{\infty}}{T_{c}-T_{\infty}} = 0.65
+\end{equation}
+
+Where $T$ is the surface temperature [$^{o}C$], $T_{\infty}$ is the water temperature [$^{o}C$] and $T_c$ is the centre temperature [$^{o}C$].
+
+Rearranging (\ref{surf_2_cent}) and using the temperatures in Table \ref{tab1} gives.
+
+\begin{equation}\label{cent_temp}
+	T = 287 ^{o}C
+\end{equation}
+
+Applying this to (\ref{ratio_1}) and again using the $\frac{1}{Bi}=1.33$ result allows the Fourier number to be found from the Heisler chart \cite{bergman_fundamentals_2011}.
+\begin{equation}\label{fo_2}
+	Fo = 0.42
+\end{equation}
+
+Substituting (\ref{fo_2}) into (\ref{Fr_2}) gives the final result.
+\begin{equation}\label{t3}
+	t = 114s
+\end{equation}
+
+It makes intuitive sense that (\ref{t3}) is lower than (\ref{t2}) as the surface will cool faster then the centre.
 
 \section{\emph{Part D: Non-infinite water bath}}
+If the tub of water is non-infinite it is possible to quantify how the temperature of the water will change during the process to check if the assumption of constant temperature is valid. 
 
+From the Heisler charts it is possible to find the proportion of total heat the steel contains that has dissipated at a given time. The temperature rise of the tank of water (Figure \ref{fig:schem_d}) when the centre of the steel ball has reached $200^{o}C$ is considered here.
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.85\textwidth]{part_d_fig}
+	\caption{Part D schematic at initial and final state.}
+	\label{fig:schem_d}
+\end{figure}
+
+Using the results of (\ref{biot_num}) and (\ref{Fr_1}) and referencing the Heisler chart \cite{bergman_fundamentals_2011} it is possible to calculate the following.
+\begin{equation}\label{q_ratio}
+	\frac{Q}{Q_o} = 0.7
+\end{equation}
+Where $Q$ is the heat transferred at time t [W] and $Q_o$ is the total heat stored initially in the steel ball [W].
+
+$Q_o$ can be calculated simply.
+\begin{equation}\label{q_o}
+	Q_o = \rho_s C_{p,s} V_s T_{c,1}
+\end{equation}
+Where $\rho_s$ is the density of steel,$C_{p,s}$ is the heat capacity of steel, V is the volume of the steel ball [$m^3$] and $T_{c,1} $is inital temperature 900$^oC$.
+
+Given the continued assumption that no heat is via the sides of the water tank all the heat, $Q$, that leaves the steel ball is absorbed by the water, shown in the following expression.
+
+\begin{equation}\label{q}
+	Q = \rho_w C_{p,w} V_w \Delta T_{w}
+\end{equation}
+
+Where the variables are the same as (\ref{q_o}) but for water, denoted by the subscript $w$ on each.
+
+Substituting (\ref{q}) and (\ref{q_o}) into (\ref{q_ratio}), rearranging to make $\Delta T_w$ the subject and using the known values shown in Figure \ref{fig:schem_d} gives.
+\begin{equation}\label{delta_t}
+	\Delta T_w = 5.4 ^oC
+\end{equation}
+
+Doing the same analysis using the $Fo$ number for the surface reaching $200^oC$ and using the assumptions detailed in the lumped capacitance method give values of $\Delta T_w$ of $\pm1^oC$, so the temperature change is similar for all examples.
+
+This is a 14\% change in the temperature and a more in depth analysis would look at the change in water properties over a $5^oC$ temperature rise to quantify this further.
+
+\FloatBarrier
 \section{\emph{Part E: Equilibrium temperature}}
 
 \bibliographystyle{plain}
