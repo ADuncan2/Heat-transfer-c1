@@ -227,7 +227,18 @@ This is a 14\% change in the temperature and a more in depth analysis would look
 
 \FloatBarrier
 \section{\emph{Part E: Equilibrium temperature}}
+Over a long time period the steel ball and water will reach a uniform equilibrium temperature. As part D has shown this temperature cannot be assumed to be the initial water temperature of $T_w = 38^oC$. The method for finding the true equilibrium does not need to account for the transient effects as it happens over a long enough time-frame that they are no longer relevant.
+\begin{equation}\label{t_inf}
+	Q = \rho_w C_{p,w} V_w (T_\infty- T_w) = \rho_s C_{p,s} V_s (T_s-T_\infty)
+\end{equation}
+Where $T_\infty$ is the equilibrium temperature [$^oC$].
 
+Rearranging (\ref{t_inf}) to make $T_\infty$ the subject and solving given properties used in Part D gives.
+\boldmath
+\begin{equation}\label{key}
+	T_\infty = 30.5^oC
+\end{equation}
+\unboldmath
 \bibliographystyle{plain}
 \bibliography{refs}
 \end{document}
