@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  29 OCT 2021 10:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.2.18)  29 OCT 2021 11:16
 entering extended mode
 **./body_text.tex
 (body_text.tex
@@ -442,7 +442,15 @@ Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@cntb=\count99
 \multirow@dima=\skip47
 \bigstrutjot=\dimen114
+)
+("C:\Users\adunc\AppData\Local\Programs\MiKTeX 2.9\tex\latex\preprint\fullpage.
+sty"
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip48
 ) (body_text.aux
+
+LaTeX Warning: Label `key' multiply defined.
+
 
 LaTeX Warning: Label `key' multiply defined.
 
@@ -452,18 +460,18 @@ LaTeX Warning: Label `key' multiply defined.
 )
 \openout1 = `body_text.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
 
 ("C:\Users\adunc\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
@@ -543,17 +551,13 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 20.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 21.
 
 ("C:\Users\adunc\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
-
-Overfull \hbox (11.12758pt too wide) in paragraph at lines 45--52
- [][] 
- []
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 21.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -561,41 +565,36 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [1
 
 {C:/Users/adunc/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (25.26846pt too wide) in paragraph at lines 60--67
- [][] 
- []
-
-[2]
-<images/part_a_fig.jpg, id=18, 567.62062pt x 234.37563pt>
+<images/part_a_fig.jpg, id=15, 567.62062pt x 234.37563pt>
 File: images/part_a_fig.jpg Graphic file (type jpg)
 <use images/part_a_fig.jpg>
-Package pdftex.def Info: images/part_a_fig.jpg  used on input line 76.
-(pdftex.def)             Requested size: 306.0022pt x 126.35352pt.
+Package pdftex.def Info: images/part_a_fig.jpg  used on input line 77.
+(pdftex.def)             Requested size: 352.31625pt x 145.47945pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--90
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
-[3 <./images/part_a_fig.jpg>] [4] [5]
-<images/part_d_fig.jpg, id=34, 574.145pt x 238.39063pt>
+[2 <./images/part_a_fig.jpg>] [3] [4]
+<images/part_d_fig.jpg, id=32, 574.145pt x 238.39063pt>
 File: images/part_d_fig.jpg Graphic file (type jpg)
 <use images/part_d_fig.jpg>
-Package pdftex.def Info: images/part_d_fig.jpg  used on input line 194.
-(pdftex.def)             Requested size: 306.0022pt x 127.05574pt.
- [6] [7 <./images/part_d_fig.jpg>]
-(body_text.bbl) [8] (body_text.aux)
+Package pdftex.def Info: images/part_d_fig.jpg  used on input line 195.
+(pdftex.def)             Requested size: 352.31625pt x 146.28743pt.
+ [5 <./images/part_d_fig.jpg>]
+(body_text.bbl) [6] (body_text.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2504 strings out of 493303
- 34030 string characters out of 3129784
- 94136 words of memory out of 3000000
- 6007 multiletter control sequences out of 15000+200000
+ 2524 strings out of 493303
+ 34446 string characters out of 3129784
+ 97206 words of memory out of 3000000
+ 6023 multiletter control sequences out of 15000+200000
  12876 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,25p,893b,227s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,9n,25p,957b,229s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cmextra/cmbsy8.pfb><C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmbx10.pfb><C:/Users/adunc/AppData/Local/Programs/MiKTeX 
@@ -619,9 +618,9 @@ Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/a
 dunc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 ><C:/Users/adunc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmti10.pfb>
-Output written on body_text.pdf (8 pages, 329016 bytes).
+Output written on body_text.pdf (6 pages, 327657 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
+ 99 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
